@@ -1,0 +1,9 @@
+runtime: python313  # 使用 Python 3.10
+
+entrypoint: gunicorn -b :$PORT main:app  # 假設你的主程式名稱是 main.py
+
+env_variables:
+  LINE_CHANNEL_ACCESS_TOKEN: 'pRtxi/TXgMpTjSAqeCWFJ6n7kihkW1Tb7S/4+Pf8+BQ0KiLzuWc2YlASF/y3MxwJ/DyzJ92GtOpdiyLRowOVBUXT17TcAriGWyFTqi0J/ujvGKawWg3TCaoVYGO0pdDLpI0Cq+NQW8Q09hztzJYsaAdB04t89/1O/w1cDnyilFU='
+  LINE_CHANNEL_SECRET: 'f98afe553b2a7f0c04db20464c2ebe76'
+
+instance_class: E2
